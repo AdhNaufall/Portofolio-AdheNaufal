@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Detail - Movie Recommendation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="project-details.css" />
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Portfolio</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-detail-container">
+        <div class="project-header">
+            <h1>Movie Recommendation System</h1>
+            <p class="project-subtitle">Machine Learning-Based Movie Recommendation Platform</p>
+        </div>
+
+        <div class="project-gallery">
+            <div class="gallery-main">
+                <img src="img/Screenshot 2025-09-23 092212.png" alt="Movie Recommendation Main Image" class="main-image" />
+            </div>
+            <div class="gallery-thumbnails">
+                <img src="img/Screenshot 2025-09-23 092225.png" alt="Movie Recommendation UI 1" onclick="changeMainImage(this.src)" />
+                <img src="img/Screenshot 2025-09-23 092244.png" alt="Movie Recommendation UI 2" onclick="changeMainImage(this.src)" />
+                <img src="img/Screenshot 2025-09-23 092302.png" alt="Movie Recommendation UI 3" onclick="changeMainImage(this.src)" />
+                <img src="img/Screenshot 2025-09-23 092312.png" alt="Movie Recommendation UI 4" onclick="changeMainImage(this.src)" />
+            </div>
+        </div>
+
+        <div class="project-content">
+            <section class="project-section">
+                <h2>Project Overview</h2>
+                <p>This project is an intelligent movie recommendation platform that harnesses the power of machine learning to provide highly personalized viewing suggestions to users. By analyzing viewing history and rating preferences, the system dynamically learns and adapts to present the most relevant and engaging films for each individual, creating a unique and satisfying movie discovery experience.</p>
+                <a href="https://project-ml-movie-rec.vercel.app/" target="_blank" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Live Demo</a>
+            </section>
+
+            <section class="project-section">
+                <h2>Main Features</h2>
+                <ul class="feature-list">
+                    <li>
+                        <i class="fas fa-brain"></i>
+                        <div>
+                            <h3>Intelligent Recommendation Engine</h3>
+                            <p>Uses machine learning algorithms to analyze user preferences and provide personalized movie recommendations.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-star"></i>
+                        <div>
+                            <h3>Interactive Rating System</h3>
+                            <p>Allows users to rate movies, which directly improves the accuracy of future recommendations.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-line"></i>
+                        <div>
+                            <h3>Preference Analysis</h3>
+                            <p>Analyzes user's favorite genre, actor, and director data to refine movie suggestions.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-film"></i>
+                        <div>
+                            <h3>Intuitive User Interface</h3>
+                            <p>Clean and user-friendly design to facilitate easy exploration and discovery of new movies.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="project-navigation">
+            <a href="project-details-cisco.html" class="nav-button prev">
+                <i class="fas fa-arrow-left"></i>
+                Previous Project
+            </a>
+            <a href="project-details-real-estate.html" class="nav-button next">
+                Next Project
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function changeMainImage(src) {
+            document.querySelector('.main-image').src = src;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Detail - Cisco Network Simulation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="project-details.css" />
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Portfolio</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-detail-container">
+        <div class="project-header">
+            <h1>Cisco Network Simulation</h1>
+            <p class="project-subtitle">BINUS Bekasi Campus Network Simulation</p>
+        </div>
+
+        <div class="project-gallery">
+            <div class="gallery-main">
+                <img src="img/Screenshot 2025-09-22 172319.png" alt="Cisco Network Main Image" class="main-image" />
+            </div>
+            <div class="gallery-thumbnails">
+                <img src="img/Screenshot 2025-09-22 172326.png" alt="Network Design 1" onclick="changeMainImage(this.src)" />
+                <img src="img/Screenshot 2025-09-22 172332.png" alt="Network Design 2" onclick="changeMainImage(this.src)" />
+                <img src="img/Screenshot 2025-09-22 172338.png" alt="Network Design 3" onclick="changeMainImage(this.src)" />
+                <img src="img/Screenshot 2025-09-22 172345.png" alt="Network Design 4" onclick="changeMainImage(this.src)" />
+                <img src="img/Screenshot 2025-09-22 172351.png" alt="Network Design 5" onclick="changeMainImage(this.src)" />
+            </div>
+        </div>
+
+        <div class="project-content">
+            <section class="project-section">
+                <h2>Project Overview</h2>
+                <p>This project is a comprehensive network simulation for BINUS Bekasi campus, covering three floors with complex network configurations. This simulation is designed to provide optimal and secure connectivity for all campus facilities, including classrooms, laboratories, and administrative areas.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Main Features</h2>
+                <ul class="feature-list">
+                    <li>
+                        <i class="fas fa-network-wired"></i>
+                        <div>
+                            <h3>Multi-Floor Topology</h3>
+                            <p>Structured network design for three campus floors</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <h3>Network Security</h3>
+                            <p>Implementation of security protocols and network segmentation</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-project-diagram"></i>
+                        <div>
+                            <h3>VLAN Management</h3>
+                            <p>VLAN configuration for network traffic separation</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-route"></i>
+                        <div>
+                            <h3>Routing Optimization</h3>
+                            <p>Data path optimization for maximum performance</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="project-navigation">
+            <a href="project-details-verdant.html" class="nav-button prev">
+                <i class="fas fa-arrow-left"></i>
+                Previous Project
+            </a>
+            <a href="#" class="nav-button next">
+                Next Project
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function changeMainImage(src) {
+            document.querySelector('.main-image').src = src;
+        }
+    </script>
+</body>
+</html>

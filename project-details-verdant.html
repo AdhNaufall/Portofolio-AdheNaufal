@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Detail - VERDANT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="project-details.css" />
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Portfolio</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-detail-container">
+        <div class="project-header">
+            <h1>VERDANT</h1>
+            <p class="project-subtitle">Sustainable Industrialization Application</p>
+        </div>
+
+        <div class="project-gallery">
+            <div class="gallery-main">
+                <img src="img/Screenshot 2025-09-22 165822.png" alt="VERDANT Main Image" class="main-image" />
+            </div>
+            <div class="gallery-thumbnails">
+                <img src="img/Screenshot 2025-09-22 165853.png" alt="VERDANT UI 1" onclick="changeMainImage(this.src)" />
+                <img src="img/Screenshot 2025-09-22 165901.png" alt="VERDANT UI 2" onclick="changeMainImage(this.src)" />
+                <img src="img/Screenshot 2025-09-22 165910.png" alt="VERDANT UI 3" onclick="changeMainImage(this.src)" />
+                <img src="img/Screenshot 2025-09-22 165919.png" alt="VERDANT UI 4" onclick="changeMainImage(this.src)" />
+                <img src="img/Screenshot 2025-09-22 165931.png" alt="VERDANT UI 5" onclick="changeMainImage(this.src)" />
+            </div>
+        </div>
+
+        <div class="project-content">
+            <section class="project-section">
+                <h2>Project Overview</h2>
+                <p>VERDANT is an application focused on sustainable industrialization, helping organizations and companies implement environmentally friendly practices in their industrial processes. This application provides comprehensive solutions for monitoring and optimizing resource usage while minimizing environmental impact.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Main Features</h2>
+                <ul class="feature-list">
+                    <li>
+                        <i class="fas fa-leaf"></i>
+                        <div>
+                            <h3>Environmental Monitoring</h3>
+                            <p>Real-time monitoring of environmental impact from industrial activities</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-bar"></i>
+                        <div>
+                            <h3>Sustainability Analysis</h3>
+                            <p>Analytics dashboard to measure and optimize resource usage</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-recycle"></i>
+                        <div>
+                            <h3>Waste Management</h3>
+                            <p>Industrial waste management and tracking system</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-certificate"></i>
+                        <div>
+                            <h3>Green Certification</h3>
+                            <p>Tracking and management of sustainability certifications</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="project-navigation">
+            <a href="project-details-adaloker.html" class="nav-button prev">
+                <i class="fas fa-arrow-left"></i>
+                Previous Project
+            </a>
+            <a href="project-details-cisco.html" class="nav-button next">
+                Next Project
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function changeMainImage(src) {
+            document.querySelector('.main-image').src = src;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Detail - Sinefolis Movie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="project-details.css" />
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Portfolio</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-detail-container">
+        <div class="project-header">
+            <h1>Sinefolis Movie</h1>
+            <p class="project-subtitle">Online Movie Ticket Purchase Website</p>
+        </div>
+
+        <div class="project-gallery">
+            <div class="gallery-main">
+                <img src="img/Screenshot 2025-09-22 162307.png" alt="Sinefolis Main Image" class="main-image" />
+            </div>
+            <div class="gallery-thumbnails">
+                <img src="img/Screenshot 2025-09-22 163202.png" alt="Sinefolis UI 1" onclick="changeMainImage(this.src)" />
+                <img src="img/Screenshot 2025-09-22 163154.png" alt="Sinefolis UI 2" onclick="changeMainImage(this.src)" />
+                <img src="img/Screenshot 2025-09-22 163147.png" alt="Sinefolis UI 3" onclick="changeMainImage(this.src)" />
+                <img src="img/Screenshot 2025-09-22 163139.png" alt="Sinefolis UI 4" onclick="changeMainImage(this.src)" />
+            </div>
+        </div>
+
+        <div class="project-content">
+            <section class="project-section">
+                <h2>Project Overview</h2>
+                <p>Sinefolis Movie is an online movie ticket purchase platform designed to provide a smooth and intuitive experience for users. This website allows users to view currently showing movies, search showtimes, select seats, and easily purchase tickets.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Main Features</h2>
+                <ul class="feature-list">
+                    <li>
+                        <i class="fas fa-search"></i>
+                        <div>
+                            <h3>Movie Search</h3>
+                            <p>Filter and search movies by genre, rating, and showtime</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-ticket-alt"></i>
+                        <div>
+                            <h3>Interactive Seat Selection</h3>
+                            <p>Interactive seat selection system with real-time cinema layout display</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-credit-card"></i>
+                        <div>
+                            <h3>Integrated Payment</h3>
+                            <p>Support for various payment methods with secure processing</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-history"></i>
+                        <div>
+                            <h3>Purchase History</h3>
+                            <p>Tracking and storing ticket purchase history</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="project-navigation">
+            <a href="#" class="nav-button prev">
+                <i class="fas fa-arrow-left"></i>
+                Previous Project
+            </a>
+            <a href="project-details-adaloker.html" class="nav-button next">
+                Next Project
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function changeMainImage(src) {
+            document.querySelector('.main-image').src = src;
+        }
+    </script>
+</body>
+</html>
