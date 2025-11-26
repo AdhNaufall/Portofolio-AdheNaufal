@@ -22,25 +22,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Handle email click
-function handleEmail() {
-    const email = 'adhenaufalpp@gmail.com';
-    
-    // Copy email to clipboard
-    navigator.clipboard.writeText(email).then(() => {
-        // Show modal or alert that email was copied
-        alert('Email telah disalin ke clipboard: ' + email);
-        
-        // Try to open default email client as fallback
-        try {
-            window.location.href = 'mailto:' + email;
-        } catch (e) {
-            console.log('Tidak dapat membuka email client');
-        }
-    }).catch(() => {
-        // If copying fails, just try to open email client
-        window.location.href = 'mailto:' + email;
-    });
+// Send email function
+function sendEmail() {
+    window.location.href = 'mailto:adhenaufalpp@gmail.com';
 }
 
 function animateShapes() {
@@ -57,7 +41,7 @@ function animateShapes() {
             shape.style.transform = `translate(${x}px, ${y}px)`;
             requestAnimationFrame(animate);
         }
-        animate();
+        animate();   
     });
 }
 
