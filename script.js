@@ -22,13 +22,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Terima kasih! Pesan Anda telah dikirim.');
-    this.reset();
-});
-
 // Handle email click
 function handleEmail() {
     const email = 'adhenaufalpp@gmail.com';

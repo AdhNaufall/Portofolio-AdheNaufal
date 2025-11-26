@@ -347,66 +347,65 @@
     <section id="contact" class="section contact">
         <div class="container">
             <h2 class="section-title">Contact Me</h2>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h3 class="contact-subtitle">Lets Talk!</h3>
-                    <p class="contact-description">
-                       Let's chat! I'm always happy to discuss, collaborate, or just have a casual conversation about anything. Feel free to contact me via the following platforms
-                    </p>
-                    <div class="contact-links">
-                        <a href="https://www.linkedin.com/in/adhe-naufal-putra-p-b98b92385/" class="contact-link">
-                            <i class="fab fa-linkedin"></i>
-                            <div class="contact-link-info">
-                                <span class="contact-link-title">LinkedIn</span>
-                                <span class="contact-link-text">adhenaufal</span>
-                            </div>
-                        </a>
-                        <a href="https://github.com/AdhNaufall" class="contact-link">
-                            <i class="fab fa-github"></i>
-                            <div class="contact-link-info">
-                                <span class="contact-link-title">GitHub</span>
-                                <span class="contact-link-text">AdhNaufall</span>
-                            </div>
-                        </a>
-                        <a href="https://www.instagram.com/adhnaufall/?next=%2F" class="contact-link">
-                            <i class="fab fa-instagram"></i>
-                            <div class="contact-link-info">
-                                <span class="contact-link-title">Instagram</span>
-                                <span class="contact-link-text">@adhnaufall</span>
-                            </div>
-                        </a>
-                        <div class="contact-link" onclick="handleEmail()">
-                            <i class="fas fa-envelope"></i>
-                            <div class="contact-link-info">
-                                <span class="contact-link-title">Email</span>
-                                <span class="contact-link-text">adhenaufalpp@gmail.com</span>
-                            </div>
-                        </div>
+            <div class="contact-intro">
+                <h3 class="contact-subtitle">Let's Connect!</h3>
+                <p class="contact-description">
+                    I'm always excited to discuss new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out through any of the platforms below!
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <a href="https://www.linkedin.com/in/adhe-naufal-putra-p-b98b92385/" target="_blank" class="contact-card">
+                    <div class="contact-card-icon linkedin">
+                        <i class="fab fa-linkedin"></i>
                     </div>
+                    <h4>LinkedIn</h4>
+                    <p>Connect professionally</p>
+                    <span class="contact-card-link">View Profile →</span>
+                </a>
+
+                <a href="https://github.com/AdhNaufall" target="_blank" class="contact-card">
+                    <div class="contact-card-icon github">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h4>GitHub</h4>
+                    <p>Check out my code</p>
+                    <span class="contact-card-link">View Repository →</span>
+                </a>
+
+                <a href="https://www.instagram.com/adhnaufall/?next=%2F" target="_blank" class="contact-card">
+                    <div class="contact-card-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h4>Instagram</h4>
+                    <p>Follow my journey</p>
+                    <span class="contact-card-link">Follow Me →</span>
+                </a>
+
+                <div class="contact-card" onclick="handleEmail()">
+                    <div class="contact-card-icon email">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4>Email</h4>
+                    <p>adhenaufalpp@gmail.com</p>
+                    <span class="contact-card-link">Send Email →</span>
                 </div>
-                <div class="contact-form-wrapper">
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required placeholder="Enter your name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required placeholder="Your email address">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required placeholder="Subject of your message">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">
+            </div>
+
+            <div class="contact-cta">
+                <div class="cta-content">
+                    <h3>Ready to Start a Project?</h3>
+                    <p>Let's create something amazing together. I'm available for freelance work and collaboration.</p>
+                    <div class="cta-buttons">
+                        <a href="mailto:adhenaufalpp@gmail.com" class="btn-primary">
                             <i class="fas fa-paper-plane"></i>
-                            Send Message
-                        </button>
-                    </form>
+                            Get In Touch
+                        </a>
+                        <a href="#projects" class="btn-secondary">
+                            <i class="fas fa-briefcase"></i>
+                            View My Work
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
