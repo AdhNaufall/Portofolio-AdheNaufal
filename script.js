@@ -24,7 +24,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Send email function
 function sendEmail() {
-    window.location.href = 'mailto:adhenaufalpp@gmail.com';
+    // Open Gmail compose in browser
+    window.open('https://mail.google.com/mail/?view=cm&fs=1&to=adhenaufalpp@gmail.com', '_blank');
 }
 
 function animateShapes() {
