@@ -1,7 +1,5 @@
 {
-  "buildCommand": "cd portfolio-react && npm install && npm run build",
-  "outputDirectory": "portfolio-react/dist",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/project-detail/(.*)", "destination": "/project-detail.html" }
   ]
 }
