@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Detail – Adhe Naufal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project-details.css">
+</head>
+<body>
+
+  <!-- Ocean Background Canvas -->
+  <canvas id="ocean-canvas"></canvas>
+
+  <!-- Floating Shapes -->
+  <div class="background-animation">
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    <div class="floating-shape shape-3"></div>
+    <div class="floating-shape shape-4"></div>
+    <div class="floating-shape shape-5"></div>
+    <div class="floating-shape shape-6"></div>
+    <div class="floating-shape shape-7"></div>
+    <div class="floating-shape shape-8"></div>
+  </div>
+
+  <!-- Particles -->
+  <div class="particles-container">
+    <div class="particle particle-1"></div>
+    <div class="particle particle-2"></div>
+    <div class="particle particle-3"></div>
+    <div class="particle particle-4"></div>
+    <div class="particle particle-5"></div>
+    <div class="particle particle-6"></div>
+    <div class="particle particle-7"></div>
+    <div class="particle particle-8"></div>
+    <div class="particle particle-9"></div>
+    <div class="particle particle-10"></div>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Adhe Naufal Portfolio</a>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="cv/AdheNaufal-CV.pdf" download="AdheNaufal-CV.pdf">Download CV</a></li>
+        </ul>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars" id="menu-icon"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== PROJECT DETAIL CONTENT ===== -->
+  <main class="project-detail-container animate-fade-in" id="project-detail-container">
+    <!-- Rendered by project-detail.js -->
+    <div style="text-align:center; padding: 8rem 2rem;">
+      <p style="color: var(--text-muted);">Loading...</p>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/adhe-naufal-putra-p-b98b92385/" target="_blank" rel="noreferrer">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/AdhNaufall" target="_blank" rel="noreferrer">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/adhnaufall/" target="_blank" rel="noreferrer">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <p style="margin-top:1rem;opacity:0.8;font-size:0.9rem;">
+        © <span id="footer-year"></span> Adhe Naufal Putra Purnomo. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/project-detail.js"></script>
+</body>
+</html>

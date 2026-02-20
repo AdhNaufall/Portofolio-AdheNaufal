@@ -1,6 +1,5 @@
-export const projectOrder = ['sinefolis', 'adaloker', 'verdant', 'cisco', 'movie-rec']
-
-export const projectsData = {
+// ===== DATA: PROJECTS =====
+const projectsData = {
   sinefolis: {
     id: 'sinefolis',
     title: 'Project UI/UX Sinefolis Movie',
@@ -23,10 +22,10 @@ export const projectsData = {
     ],
     overview: 'Sinefolis Movie is an online movie ticket purchase platform designed to provide a smooth and intuitive experience for users. This website allows users to view currently showing movies, search showtimes, select seats, and easily purchase tickets.',
     features: [
-      { icon: 'fas fa-search', title: 'Movie Search', desc: 'Filter and search movies by genre, rating, and showtime' },
-      { icon: 'fas fa-ticket-alt', title: 'Interactive Seat Selection', desc: 'Interactive seat selection system with real-time cinema layout display' },
-      { icon: 'fas fa-credit-card', title: 'Integrated Payment', desc: 'Support for various payment methods with secure processing' },
-      { icon: 'fas fa-history', title: 'Purchase History', desc: 'Tracking and storing ticket purchase history' },
+      { icon: 'fas fa-search',      title: 'Movie Search',           desc: 'Filter and search movies by genre, rating, and showtime' },
+      { icon: 'fas fa-ticket-alt',  title: 'Interactive Seat Selection', desc: 'Interactive seat selection system with real-time cinema layout display' },
+      { icon: 'fas fa-credit-card', title: 'Integrated Payment',     desc: 'Support for various payment methods with secure processing' },
+      { icon: 'fas fa-history',     title: 'Purchase History',        desc: 'Tracking and storing ticket purchase history' },
     ],
     prev: null,
     next: 'adaloker',
@@ -51,10 +50,10 @@ export const projectsData = {
     ],
     overview: 'ADALOKER is an innovative platform designed to help job seekers find career opportunities that match their skills and interests. This application combines a user-friendly interface with powerful search features to provide an efficient job search experience.',
     features: [
-      { icon: 'fas fa-search', title: 'Smart Search', desc: 'Filter by location, industry, salary, and experience level' },
-      { icon: 'fas fa-user-circle', title: 'Candidate Profile', desc: 'Creation and management of professional profiles with portfolio' },
-      { icon: 'fas fa-bell', title: 'Job Notifications', desc: 'Real-time notifications for matching job opportunities' },
-      { icon: 'fas fa-file-alt', title: 'Application Management', desc: 'Tracking application status and application history' },
+      { icon: 'fas fa-search',      title: 'Smart Search',          desc: 'Filter by location, industry, salary, and experience level' },
+      { icon: 'fas fa-user-circle', title: 'Candidate Profile',     desc: 'Creation and management of professional profiles with portfolio' },
+      { icon: 'fas fa-bell',        title: 'Job Notifications',     desc: 'Real-time notifications for matching job opportunities' },
+      { icon: 'fas fa-file-alt',    title: 'Application Management',desc: 'Tracking application status and application history' },
     ],
     prev: 'sinefolis',
     next: 'verdant',
@@ -83,10 +82,10 @@ export const projectsData = {
     ],
     overview: 'VERDANT is an application focused on sustainable industrialization, helping organizations and companies implement environmentally friendly practices in their industrial processes. This application provides comprehensive solutions for monitoring and optimizing resource usage while minimizing environmental impact.',
     features: [
-      { icon: 'fas fa-leaf', title: 'Environmental Monitoring', desc: 'Real-time monitoring of environmental impact from industrial activities' },
-      { icon: 'fas fa-chart-bar', title: 'Sustainability Analysis', desc: 'Analytics dashboard to measure and optimize resource usage' },
-      { icon: 'fas fa-recycle', title: 'Waste Management', desc: 'Industrial waste management and tracking system' },
-      { icon: 'fas fa-certificate', title: 'Green Certification', desc: 'Tracking and management of sustainability certifications' },
+      { icon: 'fas fa-leaf',        title: 'Environmental Monitoring', desc: 'Real-time monitoring of environmental impact from industrial activities' },
+      { icon: 'fas fa-chart-bar',   title: 'Sustainability Analysis',  desc: 'Analytics dashboard to measure and optimize resource usage' },
+      { icon: 'fas fa-recycle',     title: 'Waste Management',         desc: 'Industrial waste management and tracking system' },
+      { icon: 'fas fa-certificate', title: 'Green Certification',      desc: 'Tracking and management of sustainability certifications' },
     ],
     prev: 'adaloker',
     next: 'cisco',
@@ -115,10 +114,10 @@ export const projectsData = {
     ],
     overview: 'This project is a comprehensive network simulation for BINUS Bekasi campus, covering three floors with complex network configurations. This simulation is designed to provide optimal and secure connectivity for all campus facilities, including classrooms, laboratories, and administrative areas.',
     features: [
-      { icon: 'fas fa-network-wired', title: 'Multi-Floor Topology', desc: 'Structured network design for three campus floors' },
-      { icon: 'fas fa-shield-alt', title: 'Network Security', desc: 'Implementation of security protocols and network segmentation' },
-      { icon: 'fas fa-project-diagram', title: 'VLAN Management', desc: 'VLAN configuration for network traffic separation' },
-      { icon: 'fas fa-route', title: 'Routing Optimization', desc: 'Data path optimization for maximum performance' },
+      { icon: 'fas fa-network-wired',   title: 'Multi-Floor Topology', desc: 'Structured network design for three campus floors' },
+      { icon: 'fas fa-shield-alt',      title: 'Network Security',     desc: 'Implementation of security protocols and network segmentation' },
+      { icon: 'fas fa-project-diagram', title: 'VLAN Management',      desc: 'VLAN configuration for network traffic separation' },
+      { icon: 'fas fa-route',           title: 'Routing Optimization', desc: 'Data path optimization for maximum performance' },
     ],
     prev: 'verdant',
     next: 'movie-rec',
@@ -146,14 +145,89 @@ export const projectsData = {
     overview: 'This project is an intelligent movie recommendation platform that harnesses the power of machine learning to provide highly personalized viewing suggestions to users. By analyzing viewing history and rating preferences, the system dynamically learns and adapts to present the most relevant and engaging films for each individual.',
     liveDemo: 'https://project-ml-movie-rec.vercel.app/',
     features: [
-      { icon: 'fas fa-brain', title: 'Intelligent Recommendation Engine', desc: 'Uses machine learning algorithms to analyze user preferences and provide personalized movie recommendations.' },
-      { icon: 'fas fa-star', title: 'Interactive Rating System', desc: 'Allows users to rate movies, which directly improves the accuracy of future recommendations.' },
-      { icon: 'fas fa-chart-line', title: 'Preference Analysis', desc: "Analyzes user's favorite genre, actor, and director data to refine movie suggestions." },
-      { icon: 'fas fa-film', title: 'Intuitive User Interface', desc: 'Clean and user-friendly design to facilitate easy exploration and discovery of new movies.' },
+      { icon: 'fas fa-brain',      title: 'Intelligent Recommendation Engine', desc: 'Uses machine learning algorithms to analyze user preferences and provide personalized movie recommendations.' },
+      { icon: 'fas fa-star',       title: 'Interactive Rating System',         desc: 'Allows users to rate movies, which directly improves the accuracy of future recommendations.' },
+      { icon: 'fas fa-chart-line', title: 'Preference Analysis',               desc: "Analyzes user's favorite genre, actor, and director data to refine movie suggestions." },
+      { icon: 'fas fa-film',       title: 'Intuitive User Interface',          desc: 'Clean and user-friendly design to facilitate easy exploration and discovery of new movies.' },
     ],
     prev: 'cisco',
     next: null,
   },
-}
+};
 
-export const projectsList = ['sinefolis', 'adaloker', 'verdant', 'cisco', 'movie-rec'].map(id => projectsData[id])
+const projectsList = ['sinefolis', 'adaloker', 'verdant', 'cisco', 'movie-rec'].map(id => projectsData[id]);
+
+// ===== DATA: EXPERIENCES =====
+const experiences = [
+  {
+    id: 1,
+    date: 'October 2024',
+    icon: 'fas fa-recycle',
+    title: 'Volunteer to Jakarta Recycle Center',
+    company: 'Teach For Indonesia Bina Nusantara',
+    description: 'Visiting the Jakarta Recycle Center to learn about the recycling process and waste management. Focusing on the application of sustainable design principles in future projects.',
+    images: [
+      'WhatsApp Image 2025-09-22 at 10.52.47 AM.jpeg',
+      'WhatsApp Image 2025-09-22 at 10.52.43 AM.jpeg',
+      'WhatsApp Image 2025-09-22 at 10.52.40 AM.jpeg',
+    ],
+  },
+  {
+    id: 2,
+    date: 'September 2024',
+    icon: 'fas fa-tree',
+    title: 'Volunteer Biopori',
+    company: 'Teach For Indonesia Bina Nusantara',
+    description: 'Participate in reforestation programs by planting trees and creating biopores. Focus on environmental education and sustainability.',
+    images: [
+      'IMG_2522.jpg',
+      'IMG_2615 (1).jpg',
+    ],
+  },
+  {
+    id: 3,
+    date: 'November 2023',
+    icon: 'fas fa-trophy',
+    title: 'Participate in Burncup Binusian Esport',
+    company: 'Burncup Binus',
+    description: 'Participate in esports events as a player, collaborate with the team to achieve common goals and win 2nd place in the competition.',
+    images: [
+      'WhatsApp Image 2025-09-22 at 3.50.22 PM.jpeg',
+    ],
+  },
+  {
+    id: 4,
+    date: 'December 2023',
+    icon: 'fas fa-graduation-cap',
+    title: 'Volunteer teaching in highschool',
+    company: 'Teach For Indonesia Bina Nusantara',
+    description: 'Providing teaching and guidance on anti-corruption to high school students, with a focus on developing their skills and knowledge.',
+    images: [
+      'Screenshot 2025-09-22 155932.png',
+      'WhatsApp Image 2023-10-11 at 13.28.11_72b2ed7e.jpg',
+    ],
+  },
+  {
+    id: 5,
+    date: '14 December 2025',
+    icon: 'fas fa-heart',
+    title: 'Volunteer PulangKesini in Nursing home',
+    company: 'PulangKesini',
+    description: 'Visiting and spending an unforgettable day volunteering at Kencana Sejahtera Nursing Home. Sharing laughs, engaging in fun activities, and listening to incredible life stories.',
+    images: [
+      'd7f06566-0455-447c-9d13-f46925f745f2.jpg',
+      'IMG_0583.JPG',
+    ],
+  },
+  {
+    id: 6,
+    date: '21 December 2025',
+    icon: 'fas fa-paint-brush',
+    title: 'Volunteer Generasi Dewantara in OASE Anak Bangsa',
+    company: 'Generasi Dewantara',
+    description: 'Had a blast volunteering at Yayasan Oase Anak Bangsa! Spent the day bonding with the kids over a pot-decorating session. Truly grateful for the chance to play, create, and share smiles with these incredible kids!',
+    images: [
+      '20251221_100933.jpg',
+    ],
+  },
+];
